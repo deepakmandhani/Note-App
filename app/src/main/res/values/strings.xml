@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MyNotes</string>
+    <string name="action_settings">Settings</string>
+    <string name="notes_label">Notes</string>
+    <string name="no_notes_availble_message">No notes available as of now</string>
+    <string name="notes_title_validation_message">Please enter title to proceed</string>
+    <string name="notes_validation_message">Please enter description to proceed</string>
+    <string name="note_deleted_message">Note has been deleted !!</string>
+    <string name="note_label">Note</string>
+    <string name="new_note_label">New Note</string>
+    <string name="edit_note_label">Edit Note</string>
+</resources>

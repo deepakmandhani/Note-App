@@ -1,0 +1,26 @@
+<resources>
+    <dimen name="margin_15dp">15dp</dimen>
+    <dimen name="margin_10dp">10dp</dimen>
+    <dimen name="margin_3dp">3dp</dimen>
+    <dimen name="margin_5dp">5dp</dimen>
+    <dimen name="margin_8dp">8dp</dimen>
+    <dimen name="margin_20dp">20dp</dimen>
+
+
+    <dimen name="padding_10dp">10dp</dimen>
+    <dimen name="padding_15dp">15dp</dimen>
+
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="notes_label_text_size">20dp</dimen>
+    <dimen name="notes_card_elevation">4dp</dimen>
+
+
+    <dimen name="notes_item_title_text_size">14dp</dimen>
+    <dimen name="notes_item_date_text_size">12dp</dimen>
+    <dimen name="notes_item_description_line_spacing">3dp</dimen>
+    <dimen name="notes_item_dexcription_text_size">12dp</dimen>
+
+    <dimen name="notes_add_or_edit_button_background_corner_radius">3dp</dimen>
+    <dimen name="notes_edittext_text_size">20dp</dimen>
+    <dimen name="notes_card_item_min_height">75dp</dimen>
+</resources>

@@ -1,0 +1,32 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.0.0'
+        classpath 'io.realm:realm-gradle-plugin:4.1.1'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+ext {
+    appVersionName = '1.0'
+    supportLibVersion = '26.1.0'
+    butterKnifeVersion = '8.4.0'
+    parcelerVersion = '1.1.6'
+    picassoVersion = '2.5.2'
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/padding_15dp"
+    android:paddingTop="@dimen/padding_15dp">
+
+    <RelativeLayout
+        android:id="@+id/header_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/back_button_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_8dp"
+            app:srcCompat="@drawable/ic_arrow_back_black_24dp" />
+
+
+        <EditText
+            android:id="@+id/notes_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_toLeftOf="@id/delete_note_image"
+            android:layout_toRightOf="@id/back_button_view"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:layout_marginRight="@dimen/margin_10dp"
+            android:background="@android:color/transparent"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:hint="Write Title Here..."
+            android:lineSpacingExtra="2dp"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/notes_label_text_size" />
+
+        <ImageView
+            android:id="@+id/delete_note_image"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_5dp"
+            android:layout_marginRight="@dimen/margin_15dp"
+            android:src="@drawable/delete_note"
+            android:visibility="invisible"/>
+
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/notes_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/note_botton_view"
+        android:layout_below="@id/header_view"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:gravity="top"
+        android:hint="Write Note Here..."
+        android:lineSpacingExtra="@dimen/notes_item_description_line_spacing"
+        android:paddingLeft="@dimen/padding_15dp"
+        android:paddingRight="@dimen/padding_15dp"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/notes_edittext_text_size"
+        android:scrollbars="vertical" />
+
+
+    <RelativeLayout
+        android:id="@+id/note_botton_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/margin_15dp">
+
+        <ImageView
+            android:id="@+id/note_image"
+            android:layout_width="110dp"
+            android:layout_height="130dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginBottom="@dimen/margin_10dp"
+            android:background="@drawable/image_outline_background"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:id="@+id/note_no_image_text"
+            android:layout_width="110dp"
+            android:layout_height="130dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="@dimen/margin_10dp"
+            android:layout_marginLeft="50dp"
+            android:gravity="center"
+            android:text="No Attachment" />
+
+        <TextView
+            android:id="@+id/select_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_15dp"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:text="Image"/>
+
+        <ImageView
+            android:id="@+id/camera_image"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/select_text"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_15dp"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:src="@drawable/camera"/>
+
+        <ImageView
+            android:id="@+id/gallery_image"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/camera_image"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_15dp"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:src="@drawable/gallery"/>
+
+        <ImageView
+            android:id="@+id/submit_button_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/note_image"
+            android:padding="5dp"
+            android:background="@drawable/notes_submit_button_background"
+            app:srcCompat="@drawable/ic_done_black_24dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
